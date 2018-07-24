@@ -12,7 +12,50 @@
 		1A8382E82106B905000DCD51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8382E62106B905000DCD51 /* Main.storyboard */; };
 		1A8382EA2106B90A000DCD51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A8382E92106B90A000DCD51 /* Assets.xcassets */; };
 		1A8382ED2106B90A000DCD51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8382EB2106B90A000DCD51 /* LaunchScreen.storyboard */; };
+		1A8382FE2106B93E000DCD51 /* Vectors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8382FB2106B933000DCD51 /* Vectors.framework */; };
+		1A8382FF2106B93E000DCD51 /* Vectors.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8382FB2106B933000DCD51 /* Vectors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A8383042106BD08000DCD51 /* ext_SCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8383032106BD08000DCD51 /* ext_SCNNode.swift */; };
+		1A8383072106BD7D000DCD51 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8383062106BD7D000DCD51 /* constants.swift */; };
+		1A8383092106BDE3000DCD51 /* MyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8383082106BDE2000DCD51 /* MyScene.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A8382FA2106B933000DCD51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A8382F42106B932000DCD51 /* Vectors.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1A796313210049A900D5A4FD;
+			remoteInfo = Vectors;
+		};
+		1A8382FC2106B933000DCD51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A8382F42106B932000DCD51 /* Vectors.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1A79631C210049A900D5A4FD;
+			remoteInfo = VectorsTests;
+		};
+		1A8383002106B93E000DCD51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A8382F42106B932000DCD51 /* Vectors.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A796312210049A900D5A4FD;
+			remoteInfo = Vectors;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A8383022106B93E000DCD51 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1A8382FF2106B93E000DCD51 /* Vectors.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1A8382DF2106B905000DCD51 /* SceneKit (3D Graphics).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SceneKit (3D Graphics).app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +65,10 @@
 		1A8382E92106B90A000DCD51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A8382EC2106B90A000DCD51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A8382EE2106B90A000DCD51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A8382F42106B932000DCD51 /* Vectors.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Vectors.xcodeproj; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/iOS Dev/Frameworks/Vectors/Vectors.xcodeproj"; sourceTree = "<group>"; };
+		1A8383032106BD08000DCD51 /* ext_SCNNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ext_SCNNode.swift; sourceTree = "<group>"; };
+		1A8383062106BD7D000DCD51 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		1A8383082106BDE2000DCD51 /* MyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A8382FE2106B93E000DCD51 /* Vectors.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +86,7 @@
 		1A8382D62106B904000DCD51 = {
 			isa = PBXGroup;
 			children = (
+				1A8382F42106B932000DCD51 /* Vectors.xcodeproj */,
 				1A8382E12106B905000DCD51 /* SceneKit (3D Graphics) */,
 				1A8382E02106B905000DCD51 /* Products */,
 			);
@@ -57,11 +106,39 @@
 				1A8382E22106B905000DCD51 /* AppDelegate.swift */,
 				1A8382E42106B905000DCD51 /* ViewController.swift */,
 				1A8382E62106B905000DCD51 /* Main.storyboard */,
+				1A83830A2106BDF9000DCD51 /* Scene */,
+				1A8383052106BD2A000DCD51 /* Helpers */,
 				1A8382E92106B90A000DCD51 /* Assets.xcassets */,
 				1A8382EB2106B90A000DCD51 /* LaunchScreen.storyboard */,
 				1A8382EE2106B90A000DCD51 /* Info.plist */,
 			);
 			path = "SceneKit (3D Graphics)";
+			sourceTree = "<group>";
+		};
+		1A8382F52106B932000DCD51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A8382FB2106B933000DCD51 /* Vectors.framework */,
+				1A8382FD2106B933000DCD51 /* VectorsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A8383052106BD2A000DCD51 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1A8383032106BD08000DCD51 /* ext_SCNNode.swift */,
+				1A8383062106BD7D000DCD51 /* constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1A83830A2106BDF9000DCD51 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				1A8383082106BDE2000DCD51 /* MyScene.swift */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,10 +151,12 @@
 				1A8382DB2106B905000DCD51 /* Sources */,
 				1A8382DC2106B905000DCD51 /* Frameworks */,
 				1A8382DD2106B905000DCD51 /* Resources */,
+				1A8383022106B93E000DCD51 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1A8383012106B93E000DCD51 /* PBXTargetDependency */,
 			);
 			name = "SceneKit (3D Graphics)";
 			productName = "SceneKit (3D Graphics)";
@@ -110,12 +189,35 @@
 			mainGroup = 1A8382D62106B904000DCD51;
 			productRefGroup = 1A8382E02106B905000DCD51 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1A8382F52106B932000DCD51 /* Products */;
+					ProjectRef = 1A8382F42106B932000DCD51 /* Vectors.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1A8382DE2106B905000DCD51 /* SceneKit (3D Graphics) */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1A8382FB2106B933000DCD51 /* Vectors.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Vectors.framework;
+			remoteRef = 1A8382FA2106B933000DCD51 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1A8382FD2106B933000DCD51 /* VectorsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = VectorsTests.xctest;
+			remoteRef = 1A8382FC2106B933000DCD51 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1A8382DD2106B905000DCD51 /* Resources */ = {
@@ -137,10 +239,21 @@
 			files = (
 				1A8382E52106B905000DCD51 /* ViewController.swift in Sources */,
 				1A8382E32106B905000DCD51 /* AppDelegate.swift in Sources */,
+				1A8383092106BDE3000DCD51 /* MyScene.swift in Sources */,
+				1A8383042106BD08000DCD51 /* ext_SCNNode.swift in Sources */,
+				1A8383072106BD7D000DCD51 /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A8383012106B93E000DCD51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Vectors;
+			targetProxy = 1A8383002106B93E000DCD51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1A8382E62106B905000DCD51 /* Main.storyboard */ = {
@@ -279,6 +392,7 @@
 		1A8382F22106B90A000DCD51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 37W4K5Y2Y5;
@@ -297,6 +411,7 @@
 		1A8382F32106B90A000DCD51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 37W4K5Y2Y5;
